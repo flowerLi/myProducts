@@ -1,0 +1,77 @@
+<template>
+  <div class="login-wrapper">
+    <div class="login">
+      <div class="login-content">
+        <h2></h2>
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon " id="username"><i class="icon-user"></i></span>
+          <input type="text" class="form-control" placeholder="输入昵称或手机号" aria-describedby="">
+        </div>
+
+        <div class="input-group input-group-lg" >
+          <span class="input-group-addon " id="password"><i class="icon-lock"></i></span>
+          <input type="password" class="form-control" placeholder="输入密码" aria-describedby="password">
+        </div>
+        <div class="log-btn">
+          <button type="submit" class="btn btn-primary btn-lg btn-block">登录</button>
+        </div>
+        <div class="zhuce">
+          <a href="###" class="pull-left">忘记密码？</a>
+          <a href="###" class="pull-right">注册</a>
+        </div>
+      </div>
+
+      <!--  <div class="alert alert-danger alert-dismissible ng-binding ng-hide" role="alert" ng-show="loginError">
+          <button type="button" class="close" ng-click="cleanErrorMsg()">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>-->
+
+
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {}
+</script>
+
+<style>
+  .login{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .login-content {
+    max-width: 350px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 13%;
+
+    border:1px solid #ccc;
+    border-radius: 6px;
+  }
+  .login-content h2{
+    width:290px;
+    height:40px;
+    background: url(../img/logo.png) center no-repeat ;
+  }
+
+
+  /* .ng-hide:not(.ng-hide-animate) {
+     display: none !important;
+   }
+   .alert-dismissible .close {
+     position: relative;
+     top: -2px;
+     right: -21px;
+     color: inherit;
+   }*/
+  .log-btn{
+    margin-top: 22px;
+  }
+  .zhuce{
+    padding:15px;
+  }
+</style>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>webpack_ajax</title>
+    <link rel="stylesheet" href="./static/bootstrap.css">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script src="./static/js/jquery-1.12.4.js"></script>
+  <script src="./static/js/bootstrap.js"></script>
+  <style>
+
+  </style>
+  <script>
+    $(document).on('mouseover','.navname',function(){
+      var _this = $(this);
+      _this.find('ul').show().css('top',_this.index()*-42);
+      _this.css('backgroundColor','#60646D')
+  /*    _this.find('img').addClass('act')[0].src = '../img/icon1.png';*/
+    });
+    $(document).on('mouseout','.navname',function(){
+      var _this = $(this);
+      _this.find('ul').hide();
+      _this.css('backgroundColor','#757881')
+    /*  _this.find('img').addClass('act')[0].src = './src/img/icon1.png';*/
+    });
+  </script>
+</html>
